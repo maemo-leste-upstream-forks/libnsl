@@ -1,0 +1,5 @@
+libnsl (1.3.0-1) UNRELEASED; urgency=low
+
+  * Initial Release (closes: bug#968523).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 16 Aug 2020 23:58:41 +0200
