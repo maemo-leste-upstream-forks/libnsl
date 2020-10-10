@@ -25,10 +25,14 @@ Package: libnsl-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Conflicts: libc6-dev [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
-           libc6.1-dev [alpha ia64],
-           libc0.1-dev [kfreebsd-amd64 kfreebsd-i386],
-           libc0.3-dev [hurd-i386]
+Replaces: libc6-dev (<< 2.31-4) [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+          libc6.1-dev (<< 2.31-4) [alpha ia64],
+          libc0.1-dev (<< 2.31-4) [kfreebsd-amd64 kfreebsd-i386],
+          libc0.3-dev (<< 2.31-4) [hurd-i386]
+Breaks: libc6-dev (<< 2.31-4) [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+        libc6.1-dev (<< 2.31-4) [alpha ia64],
+        libc0.1-dev (<< 2.31-4) [kfreebsd-amd64 kfreebsd-i386],
+        libc0.3-dev (<< 2.31-4) [hurd-i386]
 Depends: libnsl2 (= ${binary:Version}), libtirpc-dev, ${misc:Depends}
 Description: libnsl development files
  This package contains the files needed for developing applications that
